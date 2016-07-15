@@ -35,6 +35,7 @@ pip run requirements.txt
 
 * `BOT_API_TOKEN`: This is the HTTP API Token you obtained when creating the bot
 * `USER_ID`: Once you have created a Telegram Bot, send a message to the bot and obtain your userId when the bot receives your userId
+* `GITHUB_USER_NAME`: your github username
 
 Use the following script to get your userId
 ``` python
