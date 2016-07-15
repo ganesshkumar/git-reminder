@@ -2,7 +2,7 @@ import urllib2
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-NON_CONTRIBUTION_COLOR = "#8cc665"
+NON_CONTRIBUTION_COLOR = "#eeeeee"
 
 response = urllib2.urlopen("https://github.com/users/ganesshkumar/contributions").read()
 soup = BeautifulSoup(response, 'html.parser')
