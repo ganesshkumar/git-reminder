@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 from twx.botapi import TelegramBot
 
-bot = TelegramBot(os.environ["BOT_ID"])
+bot = TelegramBot(os.environ["BOT_API_TOKEN"])
 user_id = int(os.environ["USER_ID"])
 
 def init_bot():

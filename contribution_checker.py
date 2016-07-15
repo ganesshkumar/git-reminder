@@ -1,10 +1,10 @@
-import urllib2
+import urllib2, os
 from datetime import datetime
 from bs4 import BeautifulSoup
 
 NON_CONTRIBUTION_COLOR = "#eeeeee"
 
-response = urllib2.urlopen("https://github.com/users/ganesshkumar/contributions").read()
+response = urllib2.urlopen("https://github.com/users/{0}/contributions".format(os.environ["GITHUB_USER_NAME"])).read()
 soup = BeautifulSoup(response, 'html.parser')
 
 def did_contribute(date):
