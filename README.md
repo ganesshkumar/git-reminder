@@ -28,7 +28,7 @@
 ### 2. Download the code
 Clone or fork this repo to your machine and install the dependencies.
 ```
-pip run requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 3. Environment Variables
