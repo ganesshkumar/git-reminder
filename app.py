@@ -25,7 +25,7 @@ def notify_contribution():
     today = datetime.today()
 
     if today.time().minute is not 0 or today.time().hour in skip_hours:
-        pass #return
+        return
 
     # Will be reached only on the 0th minute of non skip hours
     if not did_contribute(today.date()):
