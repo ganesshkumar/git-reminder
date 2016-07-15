@@ -1,0 +1,12 @@
+APScheduler==3.2.0
+beautifulsoup4==4.4.1
+bs4==0.0.1
+enum34==1.1.6
+funcsigs==1.0.2
+futures==3.0.5
+PyGithub==1.26.0
+pytz==2016.6.1
+requests==2.10.0
+six==1.10.0
+twx.botapi==2.1.0
+tzlocal==1.2.2
