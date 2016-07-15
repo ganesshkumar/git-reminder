@@ -13,6 +13,7 @@ def did_contribute(date):
         day_date = datetime.strptime(day_data['data-date'], '%Y-%m-%d').date()
         if (date == day_date):
             # If today
+            print day_data['fill']
             if day_data['fill'] == NON_CONTRIBUTION_COLOR:
                 return False
             else:
