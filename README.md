@@ -16,7 +16,8 @@
 
 * [ ] A collection of funky messages to choose from (instead of boring the user with the same content again and again)
 * [ ] Ask the bot not to disturb for the rest of the day
-* [ ] Dockerize
+* [x] Dockerize
+* [ ] One Bot for all the users, instead of each user creating a bot
 
 ## Usage
 
@@ -54,4 +55,23 @@ for update in updates:
 ### 4. Run the program
 ```
 python app.py
+```
+
+### Docker Container
+Instead of step 2, 3 and 4, you can use docker container to run the application. The [Docker Image](https://hub.docker.com/r/ganesshkumar/git-reminder/) has been published in Dockerhub. 
+
+**Pull the image**
+```
+docker pull ganesshkumar/git-reminder
+```
+
+**Running the container**
+```
+docker run -e "BOT_API_TOKEN=<telegram_bot_api_token>" \
+           -e "USER_ID=<telegram_user_id>" \
+           -e "GITHUB_USER_NAME=<github_username>" \
+           -e "PYTHONUNBUFFERED=0" \  # to force stdin, stdout to print to console without buffering 
+           -e "TZ=Asia/Kolkata" \     # set the timezone else timezone will be UTC
+           --name git-reminder  \
+           ganesshkumar/git-reminder
 ```
