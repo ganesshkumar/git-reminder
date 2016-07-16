@@ -14,6 +14,11 @@ def send_message(message):
     global bot, user_id
     print bot.send_message(user_id, message).wait()
 
+def get_updates(last_update_id=0):
+    updates = bot.get_updates(offset=last_update_id).wait()
+    return updates
+
+
 if __name__ == "__main__":
     init_bot()
-    send_message("Hello World!")
+    get_updates()
