@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/ganesshkumar/git-reminder/badges/gpa.svg)](https://codeclimate.com/github/ganesshkumar/git-reminder)
+
 # Git Reminder
 > A telegram bot that will remind you to contribute code to Github everyday
 
