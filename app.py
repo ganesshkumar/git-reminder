@@ -46,13 +46,13 @@ def notify_contribution():
         message = "You haven\'t contributed for the day";
     else:
         if last_contributed_date == today.date():
-            print "Already send message for the day. Skipping."
+            print ("Already send message for the day. Skipping.")
             return
         last_contributed_date = today.date()
         message = "You have contributed for the day. Keep it up!"
-    print "Sending message: " + message
+    print ("Sending message: " + message)
     send_message(message)
-    print '\n'
+    print ('\n')
 
 def check_for_updates():
     ''' Checking new incoming messages '''
@@ -74,7 +74,7 @@ def check_for_updates():
 
 
 if __name__ == "__main__":
-    print "Staring git-checker"
+    print ("Staring git-checker")
     #init_scheduler()
     #start_checker()
     check_for_updates()
