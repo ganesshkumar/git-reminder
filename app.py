@@ -75,6 +75,6 @@ def check_for_updates():
 
 if __name__ == "__main__":
     print ("Staring git-checker")
-    #init_scheduler()
-    #start_checker()
-    check_for_updates()
+    init_scheduler()
+    start_checker()
+    #check_for_updates()

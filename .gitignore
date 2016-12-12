@@ -1,3 +1,5 @@
 venv
+env.sh
+
 *.pyc
 last_update_id.txt
